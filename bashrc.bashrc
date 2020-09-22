@@ -120,11 +120,11 @@ fi
 # Load pyenv automatically by adding
 # the following to ~/.bash_profile:
 
-export PATH="/home/doilad/.pyenv/bin:$PATH"
+export PATH="/home/{username}/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
-source /home/doilad/.local/bin/activate.sh
+source /home/{username}/.local/bin/activate.sh
 
 function parse_git_branch () {
 	  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
